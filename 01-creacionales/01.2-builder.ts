@@ -60,7 +60,7 @@ class QueryBuilder {
     }
 
     orderBy(field: string, direction: 'ASC' | 'DESC' = 'ASC'): QueryBuilder {
-        this.orderFields.push(`order by ${field} ${direction}`);
+        this.orderFields.push(`${field} ${direction}`);
         return this;
     }
 
